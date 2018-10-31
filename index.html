@@ -70,18 +70,24 @@
                                     <p> 3. Most tokenizers are rule-based on each specific language. Such as English has its own set of rules that cannot be used for Italian. This makes it difficult to adapt to new languages. I believe if natural language processing tools continue with rules based segmentation then it will always be hard to adapt to new languages.
 </p>
                                 </div>
-                                <!--
+
 
                                 <div class="col-md-12 blog-post">
                                        <div class="post-title">
-                                         <h1></h1>
+                                         <h1>SBD for the English language</h1>
                                        </div>
                                        <div class="post-info">
-                                       	<span>October 28, 2018 / by <a href="https://www.mirraonaq.com/" target="_blank">Mir Raonaq</a></span>
+                                       	<span>October 29, 2018 / by <a href="https://www.mirraonaq.com/" target="_blank">Mir Raonaq</a></span>
                                        </div>
-                                       <p> </p>
-                                   </div>
+                                       <p>Sbd for English uses the following set of general rules:</p>
+                                       <p>• A period ending a sentence</p>
+                                       <p>• The following token after a period is capitalized</p>
+                                       <p>• Multiple abbreviations not ending a sentence</p>
+                                       <p>These three strategies work 95% of the time. After including more rules like elephant does, sbd works 99.73%. That is very close to perfect, but not quite there yet. How can we make the error rate 0? Well the problem comes from ambiguous periods that stem from abbreviations, ellipses, and decimal points. There has been rules to combat this but never perfect.
+</p>
 
+                                   </div>
+<!--
                                 <div class="col-md-12 blog-post">
                                     <div class="post-title">
                                       <a href="single.html"><h1>Develop a custom wordpress membership plugin from scratch using framework on localhost - part 1</h1></a>
